@@ -42,7 +42,9 @@ jobs:
         with:
           context: .
           push: true
-          build-args: version=8.1-dev
+          build-args: |
+            "version=8.1-dev"
+            "dev=1"
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:6.0-php-8.1-dev
           labels: ${{ steps.meta-dev.outputs.labels }}
 
