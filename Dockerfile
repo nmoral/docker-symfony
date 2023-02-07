@@ -1,6 +1,6 @@
 ARG version=8.1
 FROM ghcr.io/nmoral/docker-php:${version}
-VOLUME /application
+#VOLUME /application
 ARG dev=0
 
 ARG DEBIAN_FRONTEND=noninteractive
